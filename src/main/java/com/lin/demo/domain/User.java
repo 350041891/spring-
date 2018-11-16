@@ -1,9 +1,12 @@
 package com.lin.demo.domain;
 
+import org.springframework.data.elasticsearch.annotations.Document;
+
 /**
  * @author lhy
  * @date 2018/11/13 16:04
  */
+@Document(indexName = "movie",type="user")
 public class User {
     private Integer id;
     private Integer age;
